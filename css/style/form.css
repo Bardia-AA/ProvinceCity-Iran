@@ -1,5 +1,5 @@
-/* User Dashboard Section Styles */
-/* General Styles */
+/* created by Bardia Asgari Ahi;D */
+/* General Styles B.A */
 :root {
   --background-color: #ffffff;
   --border-radius-default: 5px;
@@ -34,7 +34,7 @@ body {
   font-size: var(--font-size-default);
 }
 
-/* Page Content Styles */
+/* Page Content Styles B.A */
 .page-content {
   padding: var(--default-margin);
   background-color: var(--background-color);
@@ -49,7 +49,7 @@ body {
   margin-bottom: var(--default-margin);
 }
 
-/* Dashboard Section Styles */
+/* Dashboard Section Styles B.A */
 .dashboard-section {
   border: 1px solid rgba(0, 50, 104, 0.2);
   border-radius: var(--border-radius-default);
@@ -97,7 +97,7 @@ body {
   display: none;
 }
 
-/* Button Styles */
+/* Button Styles B.A */
 .btn-primary {
   background-color: #003268;
   color: #fff;
@@ -118,7 +118,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Input Styles */
+/* Input Styles B.A */
 .form-control {
   width: 100%;
   padding: var(--default-padding);
@@ -156,7 +156,7 @@ body {
   box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
 }
 
-/* Media Queries */
+/* Media Queries B.A */
 @media (max-width: 991px) {
   .userDash-section {
     padding: 40px 0;
@@ -216,3 +216,4 @@ body {
     font-size: 12px;
   }
 }
+/* created by Bardia Asgari Ahi;D */

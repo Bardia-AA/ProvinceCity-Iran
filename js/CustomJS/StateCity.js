@@ -1,3 +1,4 @@
+// written by Bardia Asgari Ahi (☞ﾟヮﾟ)☞
 const citiesData = {
     تهران: [
         "تهران",
@@ -1255,3 +1256,4 @@ stateSelect.addEventListener("change", function () {
     }, 300); // Debounce the function call by 300 milliseconds
 });
 populateCities(stateSelect.value);
+// written by Bardia Asgari Ahi (☞ﾟヮﾟ)☞
