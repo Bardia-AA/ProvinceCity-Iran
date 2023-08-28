@@ -1,0 +1,15 @@
+/* Bootstrap CSS */
+@import url("bootstarp/bootstrap.rtl.min.css");
+
+/* Font Awesome CSS */
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+
+/* Font Styles */
+@font-face {
+  font-family: 'Iransans';
+  src: url('font/IRANSans-web.woff') format('woff');
+}
+
+body {
+  font-family: 'Iransans';
+}

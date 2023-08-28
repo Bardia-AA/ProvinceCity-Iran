@@ -1,0 +1,218 @@
+/* User Dashboard Section Styles */
+/* General Styles */
+:root {
+  --background-color: #ffffff;
+  --border-radius-default: 5px;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --form-background-color: #fff;
+  --form-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --input-border-color: #ccc;
+  --input-background-color: transparent;
+  --input-focus-border-color: #4c6faf;
+  --input-focus-box-shadow-color: rgba(76, 102, 175, 0.6);
+  --table-header-background-color: #f2f2f2;
+  --table-row-even-background-color: #f9f9f9;
+  --submit-button-background-color: #155ba7;
+  --submit-button-disabled-background-color: #7e7e7e;
+  --submit-button-text-color: #fff;
+  --font-size-small: 13px;
+  --font-size-default: 14px;
+  --font-size-large: 18px;
+  --font-size-xlarge: 28px;
+  --default-padding: 10px;
+  --default-margin: 20px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userDash-section {
+  padding: 50px 0;
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-size: var(--font-size-default);
+}
+
+/* Page Content Styles */
+.page-content {
+  padding: var(--default-margin);
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: var(--border-radius-default);
+}
+
+.page-content h2 {
+  display: flex;
+  font-size: var(--font-size-large);
+  color: #333;
+  margin-bottom: var(--default-margin);
+}
+
+/* Dashboard Section Styles */
+.dashboard-section {
+  border: 1px solid rgba(0, 50, 104, 0.2);
+  border-radius: var(--border-radius-default);
+  padding: var(--default-margin);
+  margin-bottom: var(--default-margin);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-section:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-section i {
+  margin-right: var(--default-padding);
+  margin-left: var(--default-padding);
+  font-size: medium;
+}
+
+.dashboard-section input {
+  margin-right: var(--default-padding);
+  margin-left: var(--default-padding);
+  font-size: medium;
+}
+
+.dashboard-section select {
+  font-size:small;
+}
+
+.selectpicker {
+  position: relative;
+}
+
+.selectpicker .dropdown-menu {
+  position: absolute;
+}
+
+.dashboard-section .form-group {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+}
+
+#city-form-group {
+  display: none;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #003268;
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-default);
+  font-size: var(--font-size-default);
+  padding: 8px 16px;
+  margin-top: var(--border-radius-default);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-primary:hover {
+  background-color: #00234a;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styles */
+.form-control {
+  width: 100%;
+  padding: var(--default-padding);
+  border-bottom: 2px solid var(--input-border-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: var(--border-radius-default);
+  resize: vertical;
+  margin-bottom: var(--default-padding);
+  font-size: var(--font-size-default);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: var(--input-background-color);
+  height: 50px;
+}
+
+.form-control:hover {
+  font-weight: bold;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 8px var(--input-focus-box-shadow-color);
+  font-weight: bold;
+}
+
+.form-control:valid {
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+.form-control:invalid {
+  border-color: #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .userDash-section {
+    padding: 40px 0;
+    font-size: 15px;
+  }
+
+  .dashboard-section {
+    padding: 15px;
+  }
+
+  .btn-primary {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .userDash-section {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+
+  .dashboard-section {
+    padding: var(--default-padding);
+  }
+
+  .btn-primary {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 479px) {
+  .userDash-section {
+    padding: 20px 0;
+    font-size: 13px;
+  }
+
+  .dashboard-section {
+    padding: var(--border-radius-default);
+  }
+
+  .btn-primary {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .form-control {
+    font-size: 12px;
+  }
+}
