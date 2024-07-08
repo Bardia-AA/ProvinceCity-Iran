@@ -1,7 +1,71 @@
-Here is the complete query to insert all the states and cities as per JavaScript object.
 
-# Create Tables
+# ProvinceCity-Iran
+
+This repository contains a simple HTML, CSS, and JavaScript project that allows users to select an Iranian province from a dropdown list and view the corresponding cities in that province.
+The important part of this repository is the JS.
+
+## Project Overview
+
+The project provides a simple user-friendly interface to select a province and dynamically displays the list of cities within that province. The project is built using HTML, CSS, and JavaScript and includes a custom script to manage the province-city relationships.
+
+## Features
+
+- Dropdown list of Iranian provinces.
+- Dynamic population of cities based on the selected province.
+
+## Getting Started
+
+### Prerequisites
+
+To run this project, you need a web browser that supports modern web standards.
+
+### Installation
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Bardia-AA/ProvinceCity-Iran.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd ProvinceCity-Iran
+   ```
+3. Open the `index.html` file in your web browser to view the project.
+
+## Usage
+
+1. Open the `index.html` file in your web browser.
+2. Select a province from the dropdown list.
+3. The cities dropdown will be populated based on the selected province.
+4. Submit the form to see the selected values.
+5. Now you can use the JS for your own projects.
+
+## Project Structure
+
 ```
+ProvinceCity-Iran/
+├── css/
+│   ├── style/
+│   │   ├── style.css
+│   │   └── form.css
+├── js/
+│   ├── bootstrap/
+│   │   └── bootstrap_5.3.0_dist.js
+│   ├── CustomJS/
+│   │   └── StateCity.js
+├── font/
+│   └── IRANSans-web.woff
+├── index.html
+└── README.md
+```
+
+---
+
+## Database Setup
+
+This section provides the complete SQL script to create the `States` and `Cities` tables and insert all the states and cities as per my JavaScript object. 
+
+## Create Tables
+```sql
 -- Create States table
 CREATE TABLE States (
     StateID INT IDENTITY(1,1) PRIMARY KEY,
@@ -18,7 +82,7 @@ CREATE TABLE Cities (
 ```
 
 # Insert States
-```
+```sql
 -- Inserting states into the States table
 INSERT INTO States (StateName)
 VALUES 
@@ -30,8 +94,8 @@ VALUES
 (N'مازندران'), (N'مرکزی'), (N'هرمزگان'), (N'همدان'), (N'یزد'), 
 (N'البرز');
 ```
-#Insert Cities
-```
+# Insert Cities
+```sql
 -- Inserting cities into the Cities table
 DECLARE @StateID INT;
 
@@ -549,4 +613,11 @@ INSERT INTO Cities (CityName, StateID) VALUES
 (N'نظرآباد', @StateID), (N'هشتگرد ـ ساوجبلاغ', @StateID);
 ```
 
-This SQL script will create the `States` and `Cities` tables, then insert all the states and their respective cities into these tables. Just copy and paste this script into your SQL Server management tool and run it.
+This SQL script will create the `States` and `Cities` tables, then insert all the states and their respective cities into these tables. 
+- Just copy and paste this script into your SQL Server management tool and run it. ^_^
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
