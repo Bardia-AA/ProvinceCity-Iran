@@ -2,7 +2,7 @@
 # ProvinceCity-Iran
 
 This repository contains a simple HTML, CSS, and JavaScript project that allows users to select an Iranian province from a dropdown list and view the corresponding cities in that province.
-The important part of this repository is the JS.
+-The important part of this repository is the JS.
 
 ## Project Overview
 
@@ -53,7 +53,7 @@ ProvinceCity-Iran/
 │   ├── CustomJS/
 │   │   └── StateCity.js
 ├── font/
-│   └── IRANSans-web.woff
+│   └── IRANSansWeb.ttf
 ├── index.html
 └── README.md
 ```
