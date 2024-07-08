@@ -614,6 +614,61 @@ INSERT INTO Cities (CityName, StateID) VALUES
 ```
 
 This SQL script will create the `States` and `Cities` tables, then insert all the states and their respective cities into these tables. 
+
+# Insert AreaCodes
+To add a new field for the area code to the `States` table and update it with the relevant values, you can follow these steps:
+
+1. **Add the new column** to the `States` table.
+2. **Update the new column** with the appropriate area codes.
+
+Here is the SQL script to accomplish this:
+
+```sql
+-- Step 1: Add the new column for area codes
+ALTER TABLE [States]
+ADD [AreaCode] NVARCHAR(10);
+
+-- Step 2: Update the new column with the area codes
+UPDATE [States]
+SET [AreaCode] = CASE 
+    WHEN [StateName] = N'تهران' THEN '021'
+    WHEN [StateName] = N'اصفهان' THEN '031'
+    WHEN [StateName] = N'آذربایجان شرقی' THEN '041'
+    WHEN [StateName] = N'آذربایجان غربی' THEN '044'
+    WHEN [StateName] = N'اردبیل' THEN '045'
+    WHEN [StateName] = N'ایلام' THEN '084'
+    WHEN [StateName] = N'بوشهر' THEN '077'
+    WHEN [StateName] = N'چهارمحال و بختیاری' THEN '038'
+    WHEN [StateName] = N'خراسان جنوبی' THEN '056'
+    WHEN [StateName] = N'خراسان رضوی' THEN '051'
+    WHEN [StateName] = N'خراسان شمالی' THEN '058'
+    WHEN [StateName] = N'خوزستان' THEN '061'
+    WHEN [StateName] = N'زنجان' THEN '024'
+    WHEN [StateName] = N'سمنان' THEN '023'
+    WHEN [StateName] = N'سیستان و بلوچستان' THEN '054'
+    WHEN [StateName] = N'فارس' THEN '071'
+    WHEN [StateName] = N'قزوین' THEN '028'
+    WHEN [StateName] = N'قم' THEN '025'
+    WHEN [StateName] = N'کردستان' THEN '087'
+    WHEN [StateName] = N'کرمان' THEN '034'
+    WHEN [StateName] = N'کرمانشاه' THEN '083'
+    WHEN [StateName] = N'کهگیلویه و بویراحمد' THEN '074'
+    WHEN [StateName] = N'گلستان' THEN '017'
+    WHEN [StateName] = N'گیلان' THEN '013'
+    WHEN [StateName] = N'لرستان' THEN '066'
+    WHEN [StateName] = N'مازندران' THEN '011'
+    WHEN [StateName] = N'مرکزی' THEN '086'
+    WHEN [StateName] = N'هرمزگان' THEN '076'
+    WHEN [StateName] = N'همدان' THEN '081'
+    WHEN [StateName] = N'یزد' THEN '035'
+    WHEN [StateName] = N'البرز' THEN '026'
+    ELSE NULL
+END;
+```
+
+This script first adds a new column called `AreaCode` to the `States` table. Then, it updates this column with the corresponding area codes based on the state names.
+
+
 - Just copy and paste this script into your SQL Server management tool and run it. ^_^
 
 ---
