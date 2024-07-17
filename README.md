@@ -673,6 +673,21 @@ This script first adds a new column called `AreaCode` to the `States` table. The
 
 ---
 
+## Data Accuracy
+
+We have identified that the data for some cities might not be entirely accurate. We are committed to ensuring the correctness of our dataset, and we need your help!
+How You Can Help
+
+   - Report Issues: If you notice any incorrect city names or associations, please report them by creating an issue in this repository.
+   - Contribute Data: If you have verified data, feel free to contribute by submitting a pull request with the correct data.
+
+## Planned Actions
+
+   - Verification: We are in the process of verifying the current data against reliable sources.
+   - Updates: We will periodically update the dataset.
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
