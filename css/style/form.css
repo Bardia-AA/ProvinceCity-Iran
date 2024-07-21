@@ -2,9 +2,9 @@
 /* General Styles B.A */
 :root {
   --background-color: #ffffff;
-  --border-radius-default: 5px;
+  --border-radius-default: 10px;
   --box-shadow-color: rgba(0, 0, 0, 0.1);
-  --form-background-color: #fff;
+  --form-background-color: rgba(255, 255, 255, 0.8);
   --form-box-shadow-color: rgba(0, 0, 0, 0.1);
   --input-border-color: #ccc;
   --input-background-color: transparent;
@@ -15,20 +15,23 @@
   --submit-button-background-color: #155ba7;
   --submit-button-disabled-background-color: #7e7e7e;
   --submit-button-text-color: #fff;
-  --font-size-small: 13px;
-  --font-size-default: 14px;
-  --font-size-large: 18px;
-  --font-size-xlarge: 28px;
-  --default-padding: 10px;
-  --default-margin: 20px;
+  --font-size-small: 14px;
+  --font-size-default: 16px;
+  --font-size-large: 20px;
+  --font-size-xlarge: 32px;
+  --default-padding: 12px;
+  --default-margin: 24px;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  margin: 0;
+  height: 100vh;
 }
 .userDash-section {
-  padding: 50px 0;
+  padding: 60px 0;
   margin-top: 70px;
   margin-bottom: 0;
   font-size: var(--font-size-default);
@@ -37,9 +40,10 @@ body {
 /* Page Content Styles B.A */
 .page-content {
   padding: var(--default-margin);
-  background-color: var(--background-color);
+  background-color: var(--form-background-color);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   border-radius: var(--border-radius-default);
+  backdrop-filter: blur(10px);
 }
 
 .page-content h2 {
@@ -104,7 +108,7 @@ body {
   border: none;
   border-radius: var(--border-radius-default);
   font-size: var(--font-size-default);
-  padding: 8px 16px;
+  padding: 12px 24px;
   margin-top: var(--border-radius-default);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;

@@ -5,12 +5,9 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 
 /* Font Styles */
-@font-face {
-  font-family: 'Iransans';
-  src: url('../../font/IRANSansWeb.ttf') format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
 
 body {
-  font-family: 'Iransans';
+  font-family: 'Vazir', sans-serif;
 }
 /* created by Bardia Asgari Ahi (●'◡'●) */
